@@ -609,7 +609,7 @@ p {
   margin-top: 40px;
 }
 .breadcrum_cistom .wrapper_breadcrum_cistom {
-  background-color: #aa7b37;
+  background-image: url("../images/breadcrumb.png");
   padding: 84px 0 116px 0;
   border-radius: 10px;
   display: flex;
@@ -843,7 +843,7 @@ p {
   background-color: #fdfdfd;
 }
 .our_numbers_inside .our_numbers_cards {
-  background: #FAFAFA;
+  background: #fafafa;
   border-radius: 10px;
 }
 .our_numbers_inside .our_numbers_card {
@@ -861,7 +861,151 @@ p {
   background-color: transparent;
 }
 
+.insituites_files {
+  padding: 80px 0;
+}
+.insituites_files .section_header {
+  margin-bottom: 40px;
+}
+
+.pdf_files_card {
+  text-align: center;
+  background-color: #fffbff;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #fff8ee;
+}
+.pdf_files_card h5 {
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+.programs_registeration {
+  padding: 80px 0;
+}
+.programs_registeration .nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px !important;
+  margin-top: 50px;
+}
+.programs_registeration .nav .nav-item {
+  min-width: 13.2857142857%;
+}
+.programs_registeration .nav .nav-item .nav-link {
+  background-color: #f3f4f5;
+  border-radius: 50px;
+  padding: 10px 30px;
+  color: #878787;
+  font-size: 0.9rem;
+  width: 100%;
+}
+.programs_registeration .nav .nav-item .nav-link.active {
+  background-color: #fff4e4;
+  color: #ff9600;
+  border: 1px solid #ff9600;
+}
+.programs_registeration .our_projects_cards .our_project_card {
+  background-color: #f9f9f9;
+}
+.programs_registeration .our_projects_cards .our_project_card p {
+  font-size: 0.8rem !important;
+}
+.programs_registeration .our_projects_cards .card_body {
+  width: 100%;
+}
+.programs_registeration .our_projects_cards .prgress_bar span {
+  font-size: 0.8rem !important;
+  display: block;
+  color: #686868;
+}
+.programs_registeration .our_projects_cards .prgress_bar .progress {
+  height: 8px;
+  margin-top: 10px;
+  direction: ltr;
+}
+.programs_registeration .our_projects_cards .prgress_bar .progress .progress-bar {
+  background-color: #7eb751;
+  border-radius: 10px;
+}
+
+.volunteering_page {
+  padding: 80px 0;
+}
+
+.volunteering_page_card {
+  margin-top: 50px;
+}
+.volunteering_page_card img {
+  margin-bottom: 30px;
+}
+.volunteering_page_card h5 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+.volunteering_page_card p {
+  font-size: 0.9rem;
+  color: #585757;
+  margin-top: 5px;
+}
+
+.volunteering_registeration_page {
+  padding: 80px 0;
+}
+.volunteering_registeration_page .form_style {
+  margin-top: 50px;
+}
+.volunteering_registeration_page .form_style .form-group {
+  margin-bottom: 10px;
+}
+.volunteering_registeration_page .form_style .form-group .form-control {
+  height: 56px !important;
+}
+.volunteering_registeration_page .form_style .form-group .form-control::-moz-placeholder {
+  font-size: 0.9rem;
+}
+.volunteering_registeration_page .form_style .form-group .form-control::placeholder {
+  font-size: 0.9rem;
+}
+.volunteering_registeration_page .form_style .form-group textarea.form-control {
+  height: 115px !important;
+}
+.volunteering_registeration_page .form_style .button_click {
+  margin-top: 10px;
+}
+.volunteering_registeration_page .form_style .button_click a {
+  margin: unset;
+  margin-left: auto;
+  width: 251px;
+  text-align: center;
+}
+
+.media_center_page .our_news_card .pic {
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  border-radius: 5px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.media_center_page .our_news_card .pic span {
+  margin: 0 !important;
+  font-size: 0.9rem;
+}
+
 /* Shared styles  */
+.breadcrum_cistom .wrapper_breadcrum_cistom {
+  background-position: center;
+  background-size: cover;
+}
+
 .breadcrum_cistom .wrapper_breadcrum_cistom ul li::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;

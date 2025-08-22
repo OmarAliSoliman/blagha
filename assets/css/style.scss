@@ -652,7 +652,9 @@ p {
 .breadcrum_cistom {
   margin-top: 40px;
   .wrapper_breadcrum_cistom {
-    background-color: #aa7b37;
+    // background-color: #aa7b37;
+    background-image: url("../images/breadcrumb.png");
+    @extend %backgroundImage;
     padding: 84px 0 116px 0;
     border-radius: 10px;
     display: flex;
@@ -901,8 +903,8 @@ p {
 .our_numbers_inside {
   background-color: #fdfdfd;
 
-  .our_numbers_cards{
-    background: #FAFAFA;
+  .our_numbers_cards {
+    background: #fafafa;
     border-radius: 10px;
   }
   .our_numbers_card {
@@ -910,16 +912,158 @@ p {
     margin-bottom: 0;
     .card_body {
       h5 {
-        font-size: .9rem;
+        font-size: 0.9rem;
         margin: 0;
       }
       p {
-        font-size: .8rem;
+        font-size: 0.8rem;
         margin: 0;
       }
     }
-    .card_icon{
+    .card_icon {
       background-color: transparent;
+    }
+  }
+}
+
+.insituites_files {
+  padding: 80px 0;
+  .section_header {
+    margin-bottom: 40px;
+  }
+}
+.pdf_files_card {
+  text-align: center;
+  background-color: #fffbff;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #fff8ee;
+  h5 {
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+}
+
+.programs_registeration {
+  padding: 80px 0;
+  .nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px !important;
+    margin-top: 50px;
+    .nav-item {
+      min-width: calc(93% / 7);
+      .nav-link {
+        background-color: #f3f4f5;
+        border-radius: 50px;
+        padding: 10px 30px;
+        color: #878787;
+        font-size: 0.9rem;
+        width: 100%;
+        &.active {
+          background-color: #fff4e4;
+          color: #ff9600;
+          border: 1px solid #ff9600;
+        }
+      }
+    }
+  }
+  .our_projects_cards {
+    .our_project_card {
+      background-color: #f9f9f9;
+      p {
+        font-size: 0.8rem !important;
+      }
+    }
+    .card_body {
+      width: 100%;
+    }
+    .prgress_bar {
+      span {
+        font-size: 0.8rem !important;
+        display: block;
+        color: #686868;
+      }
+      .progress {
+        height: 8px;
+        margin-top: 10px;
+        direction: ltr;
+        .progress-bar {
+          background-color: #7eb751;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+.volunteering_page {
+  padding: 80px 0;
+}
+
+.volunteering_page_card {
+  margin-top: 50px;
+  img {
+    margin-bottom: 30px;
+  }
+  h5 {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  p {
+    font-size: 0.9rem;
+    color: #585757;
+    margin-top: 5px;
+  }
+}
+
+.volunteering_registeration_page {
+  padding: 80px 0;
+  .form_style {
+    margin-top: 50px;
+    .form-group {
+      margin-bottom: 10px;
+      .form-control {
+        height: 56px !important;
+        &::placeholder {
+          font-size: 0.9rem;
+        }
+      }
+      textarea.form-control {
+        height: 115px !important;
+      }
+    }
+    .button_click {
+      margin-top: 10px;
+      a {
+        margin: unset;
+        margin-left: auto;
+        width: 251px;
+        text-align: center;
+      }
+    }
+  }
+}
+.media_center_page{
+  .our_news_card{
+    .pic{
+      border: 1px solid #fff;
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      border-radius: 5px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      span{
+        margin: 0 !important;
+        font-size: .9rem;
+      }
     }
   }
 }
