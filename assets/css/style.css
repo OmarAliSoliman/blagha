@@ -874,6 +874,7 @@ p {
   padding: 16px;
   border-radius: 10px;
   border: 1px solid #fff8ee;
+  margin-bottom: 20px;
 }
 .pdf_files_card h5 {
   font-size: 0.9rem;
@@ -1000,6 +1001,489 @@ p {
   font-size: 0.9rem;
 }
 
+.media_center_details_page {
+  padding: 80px 0;
+}
+.media_center_details_page .photo_gallery {
+  margin-top: 40px;
+}
+.media_center_details_page .photo_gallery .head {
+  background-color: #f7f7f7;
+  padding: 24px 35px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 25px;
+}
+.media_center_details_page .photo_gallery .head span {
+  position: absolute;
+  width: 5px;
+  height: 70%;
+  background-color: #585857;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 16px;
+  border-radius: 5px;
+}
+.media_center_details_page .photo_gallery .head h5 {
+  color: #8f8f8f;
+  font-size: 1.1rem;
+  margin: 0;
+}
+.media_center_details_page .photo_gallery .our_news_card .card_img {
+  height: 200px;
+}
+
+.quta {
+  background-color: #fffaf3;
+  padding: 24px 35px;
+  border-radius: 10px;
+  position: relative;
+}
+.quta span {
+  position: absolute;
+  width: 5px;
+  height: 70%;
+  background-color: #c8882f;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 16px;
+  border-radius: 5px;
+}
+.quta p {
+  color: #c8882f;
+  margin: 0;
+}
+
+.blogs_filter .search {
+  position: relative;
+  padding-right: 12px;
+  background-color: #fef8f1;
+  padding: 32px 24px;
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
+}
+.blogs_filter .search .form-group {
+  height: 46px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 100px;
+}
+.blogs_filter .search .form-group img {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+}
+.blogs_filter .search .form-group .form-control {
+  height: 100%;
+  padding-left: 44px;
+  border: 1px solid #ebebeb;
+  border-radius: 100px;
+}
+.blogs_filter .search .form-group .form-control::-moz-placeholder {
+  font-size: 0.9rem;
+}
+.blogs_filter .search .form-group .form-control::placeholder {
+  font-size: 0.9rem;
+}
+.blogs_filter .latest_blogs {
+  margin-top: 16px;
+  position: relative;
+  padding-right: 12px;
+  background-color: #fef8f1;
+  padding: 32px 24px;
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
+}
+.blogs_filter .latest_blogs .head {
+  position: relative;
+  padding-right: 12px;
+}
+.blogs_filter .latest_blogs .head h5 {
+  font-size: 1rem;
+}
+.blogs_filter .latest_blogs hr {
+  padding-bottom: 0;
+  display: block;
+  color: #dfdfdf;
+  margin: 0;
+  margin: 15px 0;
+}
+.blogs_filter .latest_blogs .side_our_news_card {
+  background-color: #fff;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+}
+.blogs_filter .latest_blogs .side_our_news_card .card_img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+.blogs_filter .latest_blogs .side_our_news_card .card_img img {
+  border-radius: 5px;
+}
+.blogs_filter .latest_blogs .side_our_news_card .card_body {
+  padding: 0;
+}
+.blogs_filter .latest_blogs .side_our_news_card h5 {
+  -webkit-line-clamp: 2 !important;
+  font-size: 0.8rem;
+  line-height: 25px;
+}
+.blogs_filter .latest_blogs .side_our_news_card p {
+  -webkit-line-clamp: 1 !important;
+  font-size: 0.8rem;
+}
+
+.competitions_page {
+  padding: 80px 0;
+}
+.competitions_page .our_project_card {
+  background-color: #f9f9f9;
+}
+.competitions_page .our_project_card .status {
+  background-color: #fff4f2;
+  color: #d85b3b;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  position: absolute;
+  top: 16px;
+  left: 32px;
+}
+.competitions_page .our_project_card .card_body p {
+  -webkit-line-clamp: 2 !important;
+}
+.competitions_page .our_project_card .date i,
+.competitions_page .our_project_card .date span {
+  color: #a7a7a7;
+  font-size: 0.9rem;
+}
+
+.competition_details_page {
+  padding: 80px 0;
+}
+.competition_details_page .quta {
+  background-color: #fff4f2;
+  padding: 24px 35px;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid #ffcfcf;
+  margin: 40px 0;
+}
+.competition_details_page .quta span {
+  position: absolute;
+  width: 5px;
+  height: 70%;
+  background-color: #d85b3b;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 16px;
+  border-radius: 5px;
+}
+.competition_details_page .quta p {
+  color: #d85b3b;
+  margin: 0;
+}
+.competition_details_page .come_details {
+  background-color: #f9f9f9;
+  border: 1px solid #e3e3e3;
+  padding: 24px;
+  border-radius: 10px;
+}
+.competition_details_page .come_details h5 {
+  color: #a1a1a1;
+  font-size: 1.1rem;
+}
+.competition_details_page .come_details .date {
+  margin: 10px 0;
+  margin-bottom: 5px;
+}
+.competition_details_page .come_details .date i,
+.competition_details_page .come_details .date span {
+  color: #a7a7a7;
+  font-size: 0.9rem;
+}
+.competition_details_page .come_details p {
+  font-size: 1rem;
+  color: #a1a1a1;
+  margin: 0;
+}
+
+.evaluation_page {
+  padding: 80px 0;
+}
+.evaluation_page .form_style {
+  margin-top: 50px;
+}
+.evaluation_page .form_style .hint {
+  font-size: 0.7rem;
+  font-weight: 200;
+  margin: 0;
+  color: #a4a3a3;
+  margin-bottom: 10px;
+  display: block;
+}
+.evaluation_page .form_style .form-group {
+  margin-bottom: 10px;
+  height: 56px !important;
+  position: relative;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.evaluation_page .form_style .form-group label {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 18px;
+  color: #878787;
+}
+.evaluation_page .form_style .form-group label span {
+  color: #e20000;
+  position: absolute;
+  left: -15px;
+  top: 0;
+}
+.evaluation_page .form_style .form-group .form-control {
+  height: 100%;
+  border-radius: 10px;
+  border: 0;
+  border: 1px solid #e4e1e1;
+}
+.evaluation_page .form_style .form-group .form-control::-moz-placeholder {
+  font-size: 0.9rem;
+}
+.evaluation_page .form_style .form-group .form-control::placeholder {
+  font-size: 0.9rem;
+}
+.evaluation_page .form_style .form-group textarea.form-control {
+  height: 115px !important;
+}
+.evaluation_page .form_style .form-group .custom_select {
+  float: none;
+  width: 100%;
+  text-align: right !important;
+}
+.evaluation_page .form_style .form-group .custom_select .current {
+  text-align: right !important;
+}
+.evaluation_page .form_style .form-group .custom_select .list {
+  width: 100%;
+  text-align: right;
+}
+.evaluation_page .form_style .form-group .custom_select .list .option {
+  text-align: right;
+}
+.evaluation_page .form_style .form-group .custom_select::after {
+  right: unset;
+  left: 10px;
+}
+.evaluation_page .form_style .button_click {
+  margin-top: 10px;
+}
+.evaluation_page .form_style .button_click a {
+  margin: unset;
+  margin-left: auto;
+  width: 251px;
+  text-align: center;
+}
+.evaluation_page .form_style .textareagroup {
+  height: 114px !important;
+}
+
+.govermence_page {
+  padding: 80px 0;
+}
+.govermence_page .service_card {
+  border-top: 3px solid #ff9600;
+  display: block;
+}
+.govermence_page .service_card h5 {
+  margin-top: 16px;
+  color: #606060;
+  font-size: 1rem;
+}
+
+.govermence_detail_page {
+  padding: 80px 0;
+}
+.govermence_detail_page .quta {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.govermence_detail_page .lista {
+  border: 1px solid #ebebeb;
+  padding: 24px;
+  border-radius: 10px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.govermence_detail_page .lista p {
+  margin: 0;
+  color: #8e8e8e;
+  font-size: 0.9rem;
+}
+.govermence_detail_page .lista li {
+  margin-bottom: 8px;
+}
+.govermence_detail_page .lista li::marker {
+  color: #8e8e8e;
+}
+
+.banks_accounts_page {
+  padding: 80px 0;
+}
+.banks_accounts_page .section_header {
+  margin-bottom: 40px;
+}
+.banks_accounts_page .our_project_card {
+  background-color: #fbf9f9;
+  margin-bottom: 16px;
+}
+.banks_accounts_page .our_project_card .card_img {
+  width: 118px;
+  height: 102px;
+}
+.banks_accounts_page .our_project_card .card_img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 70%;
+  margin: auto;
+}
+.banks_accounts_page .our_project_card h5 {
+  font-size: 1rem;
+  margin: 0;
+}
+.banks_accounts_page .our_project_card p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.fundraising_website_page {
+  padding: 80px 0;
+}
+.fundraising_website_page .section_header {
+  margin-bottom: 40px;
+}
+
+.fundraising_website_card {
+  border: 1px solid #e9e9e9;
+  padding: 24px 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+.fundraising_website_card .card_img {
+  height: 180px;
+  border-radius: 5px;
+}
+.fundraising_website_card .card_img .status {
+  background-color: #FAFAFA;
+  color: #949494;
+  border-radius: 50px;
+  padding: 7px 20px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 3;
+}
+.fundraising_website_card .card_img img {
+  border-radius: 5px;
+}
+.fundraising_website_card .card_body h5 {
+  font-size: 1rem;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.fundraising_website_card .card_body p {
+  color: #808080;
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+.fundraising_website_card .progress_wrap span {
+  font-size: 0.7rem;
+  color: #999999;
+}
+.fundraising_website_card .progress_wrap .progress {
+  height: 8px;
+  margin-top: 10px;
+  direction: ltr;
+}
+.fundraising_website_card .progress_wrap .progress .progress-bar {
+  background-color: #7eb751;
+  border-radius: 10px;
+}
+.fundraising_website_card .input-group {
+  height: 40px;
+}
+.fundraising_website_card .input-group .form-control {
+  border: 1px solid #ededed;
+  background-color: #fff;
+}
+.fundraising_website_card .input-group .form-control::-moz-placeholder {
+  font-size: 0.8rem;
+}
+.fundraising_website_card .input-group .form-control::placeholder {
+  font-size: 0.8rem;
+}
+.fundraising_website_card .input-group .input-group-text {
+  border: 1px solid #ededed;
+  font-size: 0.9rem;
+}
+.fundraising_website_card .card_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.fundraising_website_card .card_footer a.btn_click {
+  background-color: #ff9600;
+  display: block;
+  width: 312px;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.fundraising_website_card .card_footer .dropdown .btn {
+  border: 1px solid #e9e9e9;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.fundraising_website_card .card_footer .dropdown .btn:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+.fundraising_website_card .card_footer .dropdown .dropdown-toggle::after {
+  display: none;
+}
+.fundraising_website_card .card_footer .dropdown-menu {
+  padding: 12px;
+  border: 1px solid #e4e1e1;
+}
+.fundraising_website_card .card_footer .dropdown-menu li a {
+  border-radius: 5px;
+  padding: 5px 14px;
+  font-size: 0.9rem;
+}
+.fundraising_website_card .card_footer .dropdown-menu li a i,
+.fundraising_website_card .card_footer .dropdown-menu li a span {
+  transition: all 0.5s ease-in-out;
+  color: #878787;
+}
+.fundraising_website_card .card_footer .dropdown-menu li a:hover {
+  background-color: #fff6e9;
+}
+.fundraising_website_card .card_footer .dropdown-menu li a:hover i,
+.fundraising_website_card .card_footer .dropdown-menu li a:hover span {
+  color: #ff9600;
+}
+
 /* Shared styles  */
 .breadcrum_cistom .wrapper_breadcrum_cistom {
   background-position: center;
@@ -1011,7 +1495,7 @@ p {
   font-weight: 900;
 }
 
-.side_our_news_card .card_body h5, .side_our_news_card .card_body p, .our_project_card .card_body h5, .our_project_card .card_body p {
+.side_our_news_card .card_body h5, .side_our_news_card .card_body p, .our_project_card .card_body h5, .our_project_card .card_body p, .blogs_filter .latest_blogs .side_our_news_card h5, .blogs_filter .latest_blogs .side_our_news_card p {
   overflow: hidden;
   display: -webkit-box;
   text-overflow: ellipsis;

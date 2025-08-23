@@ -51,91 +51,9 @@ $(document).ready(function () {
     });
   }
 
-  if ($(".screens_mobile_slider").length) {
-    $(".screens_mobile_slider").slick({
-      slidesToShow: 5,
-      slidesToScroll: 5,
-      arrows: false,
-      dots: true,
-      speed: 3000,
-      infinite: true,
-      css: "linear",
-      loop: true,
-      autoplaySpeed: 2000,
-      centerMode: false,
-      autoplay: true,
-      rtl: currentDir == "rtl" ? true : false,
-      responsive: [
-        {
-          breakpoint: 1100,
-          settings: {
-            slidesToShow: 3,
-            // centerMode: false,
-          },
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3,
-            // centerMode: false,
-          },
-        },
-
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            // centerMode: false,
-          },
-        },
-      ],
-    });
+  if ($(".custom_select").length) {
+    $(".custom_select").niceSelect();
   }
-
-
-  // works_done_slider
-   if ($(".works_done_slider").length) {
-    $(".works_done_slider").slick({
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      arrows: false,
-      dots: true,
-      infinite: true,
-      loop: true,
-      autoplaySpeed: 3000,
-      centerMode: false,
-      autoplay: true,
-      rtl: currentDir == "rtl" ? true : false,
-      responsive: [
-        {
-          breakpoint: 1100,
-          settings: {
-            slidesToShow: 3,
-            // centerMode: false,
-          },
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 2,
-            // centerMode: false,
-          },
-        },
-
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            // centerMode: false,
-          },
-        },
-      ],
-    });
-  }
-
-  // if ($(".custom_select").length) {
-  //   $(".custom_select").niceSelect();
-  // }
 
   // $(window).on("scroll", function () {
   //   if ($(this).scrollTop() > 20) {
