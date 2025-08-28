@@ -3,6 +3,13 @@ $(document).ready(function () {
   var currentDir = $("a").css("direction");
   console.log(currentDir);
 
+  if($(".header_slider").length){
+    $(".header_slider").slick({
+      dots: true,
+      arrows: false
+    });
+  }
+
   if ($(".what_they_sya_cards_slider").length) {
     $(".what_they_sya_cards_slider").slick({
       slidesToShow: 3,
@@ -28,14 +35,14 @@ $(document).ready(function () {
         {
           breakpoint: 1100,
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 3,
             // centerMode: false,
           },
         },
         {
           breakpoint: 991,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 2,
             // centerMode: false,
           },
         },
@@ -43,7 +50,7 @@ $(document).ready(function () {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             // centerMode: false,
           },
         },

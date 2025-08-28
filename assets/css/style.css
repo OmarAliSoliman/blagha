@@ -267,18 +267,59 @@ p {
   color: #686868;
   font-size: 0.9rem;
 }
-
-.custom_header {
+.custom_navbar .submenu_parent {
+  cursor: pointer;
   position: relative;
 }
-.custom_header .header_svg {
+.custom_navbar .submenu_parent .submenu {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  top: 30px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
+.custom_navbar .submenu_parent .submenu li {
+  margin: 0;
+}
+.custom_navbar .submenu_parent .submenu li a {
+  padding: 5px;
+  border-radius: 3px;
+}
+.custom_navbar .submenu_parent .submenu li a:hover {
+  background-color: rgba(255, 149, 0, 0.7098039216);
+  color: #fff;
+}
+.custom_navbar .submenu_parent i {
+  color: #575757;
+  font-size: 0.8rem;
+  margin-right: 5px;
+}
+.custom_navbar .submenu_parent:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0);
+}
+.custom_navbar .nav_icon {
+  display: none;
+}
+
+.custom_header .slider_item {
+  position: relative;
+}
+.custom_header .slider_item .header_svg {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
   height: 100%;
 }
-.custom_header .header_svg img {
+.custom_header .slider_item .header_svg img {
   height: 100%;
 }
 .custom_header .card_img {
@@ -289,7 +330,7 @@ p {
 }
 .custom_header .header_content {
   position: relative;
-  z-index: 3;
+  z-index: 5;
   text-align: center;
 }
 .custom_header .header_content h5 {
@@ -306,6 +347,28 @@ p {
   width: fit-content;
   border-radius: 50px;
   margin: auto;
+}
+.custom_header .slick-dots {
+  display: flex;
+  justify-content: center;
+  bottom: 10px;
+  margin: 0;
+  list-style-type: none;
+}
+.custom_header .slick-dots li {
+  margin: 0 0;
+}
+.custom_header .slick-dots button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+}
+.custom_header .slick-dots li.slick-active button {
+  background-color: #FF9600;
 }
 
 .our_services {
@@ -574,6 +637,7 @@ p {
   flex: none;
   margin-left: 15px;
   border-radius: 10px;
+  text-align: center;
 }
 .our_project_card .card_img img {
   border-radius: 10px;
@@ -593,6 +657,7 @@ p {
   font-size: 0.95rem;
   margin: 0;
   -webkit-line-clamp: 3 !important;
+  line-break: anywhere;
 }
 .our_project_card .card_body a {
   color: #ff9600;
@@ -610,7 +675,7 @@ p {
 }
 .breadcrum_cistom .wrapper_breadcrum_cistom {
   background-image: url("../images/breadcrumb.png");
-  padding: 84px 0 116px 0;
+  padding: 84px 0 90px 0;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -892,6 +957,14 @@ p {
   width: 100%;
   margin-bottom: 40px !important;
   margin-top: 50px;
+  overflow: auto;
+  flex-wrap: nowrap;
+  padding-bottom: 15px;
+}
+.programs_registeration .nav li {
+  min-width: -moz-max-content !important;
+  min-width: max-content !important;
+  margin-left: 5px;
 }
 .programs_registeration .nav .nav-item {
   min-width: 13.2857142857%;
@@ -1150,6 +1223,7 @@ p {
   position: absolute;
   top: 16px;
   left: 32px;
+  z-index: 3;
 }
 .competitions_page .our_project_card .card_body p {
   -webkit-line-clamp: 2 !important;
@@ -1484,8 +1558,245 @@ p {
   color: #ff9600;
 }
 
+.footer {
+  background-color: #527834;
+  padding: 60px 0;
+  background-image: url("../images/footer-bg.png");
+}
+.footer .footer_logo img {
+  width: 80px;
+}
+.footer .footer_logo p {
+  color: #fff;
+  font-size: 0.9rem;
+}
+.footer .footer_logo li a {
+  width: 32px;
+  height: 32px;
+  background-color: #7EB751;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 4px;
+}
+.footer .footer_logo li a i {
+  color: #fff;
+}
+.footer .fast_links h5 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.footer .fast_links ul {
+  flex-wrap: wrap;
+}
+.footer .fast_links ul li {
+  width: 50%;
+}
+.footer .fast_links ul li a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+.footer .seubscrip h5 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.footer .seubscrip p {
+  font-size: 0.9rem;
+  color: #fff;
+}
+.footer .seubscrip .input-group {
+  height: 60px;
+}
+.footer .seubscrip .input-group .form-control {
+  background-color: #fff;
+  border: 0;
+}
+.footer .seubscrip .input-group .form-control::-moz-placeholder {
+  font-size: 0.8rem;
+}
+.footer .seubscrip .input-group .form-control::placeholder {
+  font-size: 0.8rem;
+}
+.footer .seubscrip .input-group button {
+  background-color: #FF9600;
+  color: #fff;
+  border-color: #FF9600;
+}
+.footer .copy_right {
+  margin-top: 50px;
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+.footer .copy_right hr {
+  color: #D3D3D3;
+}
+.footer .copy_right h5 {
+  font-size: 0.8rem;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.fixed_social {
+  position: fixed;
+  right: 20px;
+  z-index: 3;
+  bottom: 50px;
+}
+.fixed_social ul li a {
+  width: 32px;
+  height: 32px;
+  background-color: #2A2A2A;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 0;
+}
+.fixed_social ul li a i {
+  color: #fff;
+}
+
+@media (max-height: 700px) {
+  .custom_header .header_content {
+    width: 60%;
+    margin: auto;
+  }
+  .custom_header .header_content h5 {
+    font-size: 2rem;
+  }
+  .custom_header .header_content h5 {
+    line-height: 45px;
+  }
+}
+@media (max-width: 1400px) {
+  .our_numbers_card p {
+    font-size: 0.9rem;
+  }
+  .our_numbers_card h5 {
+    font-size: 2rem;
+  }
+  .custom_navbar .links ul li {
+    min-width: 66px;
+  }
+}
+@media (max-width: 1100px) {
+  html,
+  body {
+    font-size: 13px;
+  }
+  .custom_header .header_content h5 {
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
+  .banks_accounts_page .our_project_card h5 {
+    line-height: 25px;
+  }
+}
+@media (max-width: 900px) {
+  .custom_navbar .links ul {
+    display: none !important;
+  }
+  .top_header .wrap {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .top_header .social {
+    margin-top: 5px;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .custom_navbar {
+    padding: 10px 0;
+  }
+  .custom_header .header_content a {
+    padding: 10px 34px;
+  }
+  .contact_info_card {
+    margin-bottom: 12px;
+  }
+  .form_style .button_click {
+    margin-top: 0;
+  }
+  .footer .footer_logo {
+    margin-bottom: 25px;
+  }
+  .footer .fast_links h5 {
+    font-size: 1.5rem;
+  }
+  .navbar_wrap {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .navbar_wrap i {
+    font-size: 1.5rem;
+    color: #000;
+  }
+  .navbar_wrap .nav_icon {
+    display: block;
+  }
+  .custom_navbar .logo {
+    margin-left: 0;
+  }
+  .programs_registeration .our_projects_cards .our_project_card {
+    flex-direction: column;
+  }
+  .our_project_card .card_img {
+    width: 90%;
+    height: 165px;
+  }
+  .volunteering_registeration_page .volunteering_registeration_img {
+    margin-top: 50px;
+  }
+}
+.mm-btn--next:after, .mm-btn--prev:before {
+  transform: rotate(315deg);
+}
+
+@media (max-width: 600px) {
+  .top_header .wrap {
+    display: none !important;
+  }
+  .custom_header .header_content {
+    width: 100%;
+  }
+  .custom_header .header_content h5 {
+    line-height: 30px;
+    font-size: 1.3rem;
+  }
+  .who_us_card {
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  .our_project_card {
+    flex-direction: column;
+  }
+  .our_project_card .card_img {
+    width: 90%;
+  }
+  .contact_info_card {
+    justify-content: flex-start;
+  }
+  .custom_header .slider_item .header_svg {
+    display: none;
+  }
+  .side_our_news_card .card_img {
+    height: 151px;
+  }
+  .side_our_news_card .card_body h5 {
+    line-height: 25px;
+  }
+}
+@media (max-width: 340px) {
+  .breadcrum_cistom .wrapper_breadcrum_cistom ul li a {
+    margin: 0 7px;
+  }
+}
 /* Shared styles  */
-.breadcrum_cistom .wrapper_breadcrum_cistom {
+.breadcrum_cistom .wrapper_breadcrum_cistom, .footer {
   background-position: center;
   background-size: cover;
 }
